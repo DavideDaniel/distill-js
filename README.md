@@ -2,14 +2,14 @@
 
 A reason to comment your code, so you don't have to rewrite too much in your README.MD.
 
-### Installation
+<!-- ### Installation
 
-`npm install commentdoc --save`
+`npm install commentdoc --save` -->
 
-### Usage
+<!-- ### Usage
 
     var commentDoc = require('commentdoc')
-        extract = commentDoc.extract("FILE TO READ.js", "FILE TO WRITE.js"),
+        extract = commentDoc.extract("FILE TO READ.js", "FILE TO WRITE.js"), -->
 
 
 ### What this does...

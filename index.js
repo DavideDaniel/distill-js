@@ -31,6 +31,7 @@ module.exports = {
                         if (data) {
                             var text = data.toString();
                             if (text === longString) {
+                              return true
                                 console.log(fileToWrite + ' written succesfully.');
                             }
                         }
@@ -39,6 +40,6 @@ module.exports = {
             }
 
         });
-    };
+    }
 
 }
