@@ -1,0 +1,31 @@
+{
+  "name": "commentdoc",
+  "version": "1.0.0",
+  "description": "Extracts comments from js files and puts them into md files",
+  "main": "commentdoc.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavideDaniel/commentdoc"
+  },
+  "keywords": [
+    "comments",
+    "extract",
+    "markdown",
+    "md",
+    "js",
+    "javascript"
+  ],
+  "author": "David Daniel <davidedaniel@gmail.com> (http://davidedaniel.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavideDaniel/commentdoc/issues"
+  },
+  "homepage": "https://github.com/DavideDaniel/commentdoc",
+  "dependencies": {
+    "fs": "0.0.2",
+    "mocha": "^2.2.4"
+  }
+}
