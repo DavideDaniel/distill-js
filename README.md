@@ -22,4 +22,4 @@ COMMENTDOC allows you to comment your code while preparing to write it in your R
 0.1.0
 
 ### License
-<>
+[License](<https://github.com/davidedaniel/commentdoc/blob/master/license.md>)
