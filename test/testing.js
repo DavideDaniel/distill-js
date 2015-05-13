@@ -1,3 +1,4 @@
+"use strict";
 var assert = require("assert");
 var fs = require("fs");
 describe("extractComments function", function () {
@@ -8,7 +9,7 @@ describe("extractComments function", function () {
 
             }
         }))
-    })
+    });
     it("should detect // in the file and return true", function () {
         assert.equal(fs.readFile("server.js", function (err, data) {
             if (data) {
@@ -65,20 +66,22 @@ describe("extractComments function", function () {
                     }
                 }
                 if (counter === commentArray.length) {
-                	var longString = ''
+                    var longString = ''
                     for (var i = 0; i < commentArray.length; i++) {
-                    	longString += commentArray[i] + '\n'
+                        longString += commentArray[i] + '\n'
                     };
-                    fs.writeFile("README.md", longString, function(err){
-                    	if (err){console.error(err)};
+                    fs.writeFile("README.md", longString, function (err) {
+                        if (err) {
+                            console.error(err)
+                        };
                     })
-                    fs.readFile("README.md", function(err, data){
-                    	if (data){
-                    		var text = data.toString();
-                    		if (text === longString){
-                    			return true
-                    		}
-                    	}
+                    fs.readFile("README.md", function (err, data) {
+                        if (data) {
+                            var text = data.toString();
+                            if (text === longString) {
+                                return true
+                            }
+                        }
                     })
                 }
             }
