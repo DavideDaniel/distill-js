@@ -2,9 +2,8 @@
 var fs = require("fs");
 
 // module for commentDoc
-
 module.exports = {
-    extract: function (fileToRead, fileToWrite) {
+    extract: function (fileToRead, fileToWrite) { // params taken as strings
 
         fs.readFile(fileToRead, function (err, data) {
             if (data) {
@@ -39,6 +38,5 @@ module.exports = {
             }
 
         });
-    };
-
+    }
 }
