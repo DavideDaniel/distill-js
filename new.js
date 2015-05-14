@@ -11,7 +11,8 @@ var fs = require("fs"),
 //       for (var i = 0; i < commentArray.length; i++) {
 //         commentArray[i].replace(/\/\//, '');
 //       if (err) { throw err; }
-//       console.log("Done reading");
+//         console.log("Done reading");
+//         writeFile(writeFileName);
 //       }
 //     });
 //   },
@@ -36,8 +37,8 @@ function readWrite (readThisFile, writeFileName) {
       commentArray[i].replace(/\/\//, '');
       console.log(commentArray);
     if (err) { throw err; }
-    console.log("Done reading");
-    writeFile(writeFileName);
+      console.log("Done reading");
+      writeFile(writeFileName);
     }
   });
 }
