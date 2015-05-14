@@ -28,8 +28,8 @@ module.exports = {
         })
     },
     extract: function () {
-        readFileName = process.argv[2]
-        writeFileName = process.argv[3]
+        // readFileName = process.argv[2]
+        // writeFileName = process.argv[3]
     }
 }
 
