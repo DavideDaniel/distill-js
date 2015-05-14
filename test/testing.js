@@ -1,31 +1,33 @@
 "use strict";
-var assert = require("assert");
+//var assert = require("assert");
 var fs = require("fs");
+var chai = require('chai');
+var assert = chai.assert;
 
 describe("extractComments function", function () {
     it("should return true when a file is present", function () {
         var text = fs.readFile("server.js", function (err, data) {
-            console.log(data);
             if (err) {
                 throw err;
             }
-            // var text = data.toString()
 
             assert.equal(text, '// hi');
         })
-    })
-
+    });
     it("should detect // in the file and return true", function () {
-        assert.equal(fs.readFile("server.js", function (err, data) {
+        fs.readFile("server.js", function (err, data) {
             //console.log(data.toString());
-            if (data !== null) {
-                var text = data.toString();
-                if (text.indexOf('//') > 0) {
-                    return true;
-                }
+            var text = data.toString();
+            //console.log(text);
+            if (err) {
+                throw err;
             }
-        }), true)
-    })
+            var commentArray = text.match(new RegExp(/\/\/...*\b/i))
+            console.log(commentArray);
+            assert.isTrue(commentArray.length >= 1);
+            done();
+        });
+    });
     it("should return lines that start with // in the file", function () {
         assert.equal(fs.readFile("server.js", function (err, data) {
             //console.log(data);
@@ -62,7 +64,7 @@ describe("extractComments function", function () {
         }), true)
     })
     it("should write the comments into a markdown file and the contents should match", function () {
-        assert.equal(fs.readFile("server.js", function (err, data) {
+        assert.isTrue(fs.readFile("server.js", function (err, data) {
             //console.log(data.toString())
             if (data) {
                 var text = data.toString();

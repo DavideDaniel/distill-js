@@ -18,16 +18,19 @@
     "js",
     "javascript"
   ],
-  "author": "David Daniel <davidedaniel@gmail.com> (http://davidedaniel.github.io), Alvin liang <liangalvin@yahoo.com>" ,
+  "author": "David Daniel <davidedaniel@gmail.com> (http://davidedaniel.github.io), Alvin liang <liangalvin@yahoo.com>",
   "license": [
-  {"type": "MIT",
-"url": "https://github.com/DavideDaniel/commentdoc/blob/master/LICENSE.md"
-}],
+    {
+      "type": "MIT",
+      "url": "https://github.com/DavideDaniel/commentdoc/blob/master/LICENSE.md"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/DavideDaniel/commentdoc/issues"
   },
   "homepage": "https://github.com/DavideDaniel/commentdoc",
   "dependencies": {
+    "chai": "^2.3.0",
     "fs": "0.0.2",
     "mocha": "^2.2.4"
   }
