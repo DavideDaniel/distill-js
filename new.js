@@ -4,8 +4,8 @@ var fs = require("fs"),
     commentArray = [];
 
 // module.exports = {
-//   read: function (readFileName) {
-//     fs.readFile (readFileName, function(err, data) {
+  // read: function (readFileName) {
+    // fs.readFile (readFileName, function(err, data) {
 //       var text = data.toString();
 //       var commentArray = text.match(new RegExp(/\/\/...*\b/i));
 //       for (var i = 0; i < commentArray.length; i++) {
@@ -30,7 +30,7 @@ var fs = require("fs"),
 
 
 function readWrite (readThisFile, writeFileName) {
-  fs.readFile (readThisFile, function(err, data) {
+  fs.readFile(readThisFile, function(err, data) {
     var text = data.toString();
       commentArray = text.match(new RegExp(/\/\/...*\b/i));
     for (var i = 0; i < commentArray.length; i++) {
@@ -55,4 +55,4 @@ function writeFile (writeFileName) {
   })
 }
 
-readWrite("server.js", "test.md");
+readWrite("testRead.js", "test.md");
