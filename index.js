@@ -11,38 +11,38 @@ module.exports = {
         });
         return text
     },
-    filter: function (text) {
+    filter: function (fileName, text) {
         var pattern = new RegExp("(\/\/...*\b)", "ig");
         var lines = text.split(/\n/);
-        console.log(lines);
-        // var commentArray = text.split(pattern);
-        // text = text.split(pattern)
-        var counter = 0;
-        for (var i = 0; i < commentArray.length; i++) {
-            // commentArray[i].replace(/\/\//, '')
-            if (commentArray[i].indexOf('//') < 0) {
-                counter++
+        var title = 'From ' + fileName + '\n';
+        var listOfLines = [title];
+        for (var i = 0; i < lines.length; i++) {
+            if (lines[i].indexOf('// ') >= 0) {
+                var newLine = lines[i].replace('\/\/ ', '');
+                listOfLines.push('Line ' + i + ': ' + newLine);
+            }
+            else {
+                console.log('not replacing :' + lines[i]);
             }
         }
-        commentArray.split(/\n/);
-        console.log(commentArray);
+        console.log(listOfLines);
+        return listOfLines
     },
     write: function (fileToWrite, filteredText) {
-        var fileName = fileToWrite;
-        // console.log(fileName);
-        var stringToWrite = 'From file: ' + fileName + '\n' + filteredText;
-        // console.log(stringToWrite);
-        fs.writeFileSync(fileToWrite, stringToWrite, function (err) {
-            if (err) {
-                console.error(err);
-            };
+        for (var i = 0; i < filteredText.length; i++) {
+            var line = filteredText[i] + '\n'
+            fs.appendFileSync(fileToWrite, line, encoding = 'utf8', function (err) {
+                if (err) {
+                    console.error(err);
+                };
                 console.log(fileToWrite + 'ready.');
-        });
+            });
+        };
     },
     extract: function (fileToRead, newFile) { // params taken as strings
         var text = this.read(fileToRead);
         console.log(text);
-        text = this.filter(text);
+        text = this.filter(fileToRead, text);
         this.write(newFile, text);
     }
 }

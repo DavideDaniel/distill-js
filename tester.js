@@ -1,4 +1,4 @@
 var commentDoc = require('./index');
 
-// commentDoc.read('testRead.js');
+// commentDoc.read
 commentDoc.extract('testRead.js', 'test.md');
