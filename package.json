@@ -31,6 +31,7 @@
   "homepage": "https://github.com/DavideDaniel/commentdoc",
   "dependencies": {
     "chai": "^2.3.0",
+    "chai-as-promised": "^5.0.0",
     "fs": "0.0.2",
     "mocha": "^2.2.4"
   }

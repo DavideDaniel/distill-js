@@ -1,6 +1,6 @@
 # COMMENTDOC
 
-A reason to comment your code, so you don't have to rewrite too much in your README.MD.
+Easily separate comments from your javascript code.
 
 <!-- ### Installation
 
@@ -14,8 +14,7 @@ A reason to comment your code, so you don't have to rewrite too much in your REA
 
 ### What this does...
 
-COMMENTDOC allows you to comment your code while preparing to write it in your README.MD file. After finishing your app, run COMMENTDOC to have a readme.md written. Go into the readme file and format it the way you like.
-
+commentDoc currently reads through your javascript file and extracts your comments, then appends them to a given file. Use it to peruse comments or prep your documentation.
 
 ### Version
 
