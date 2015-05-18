@@ -14,7 +14,7 @@ Easily separate comments from your javascript code.
 
 ### What this does...
 
-commentDoc currently reads through your javascript file and extracts your comments, then appends them to a given file. Use it to peruse comments or prep your documentation.
+commentDoc currently reads through your javascript file and extracts your comments, then appends them to a given file. Use it to peruse comments or prep documentation.
 
 ### Version
 
