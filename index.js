@@ -2,7 +2,6 @@
 var fs = require("fs");
 
 exports.read = function (filePath) {
-  console.log(filePath);
   var text = fs.readFileSync(filePath, 'utf8', function (err, data) {
     if (err)
       throw (err);
@@ -36,7 +35,6 @@ exports.write = function (fileToWrite, filteredText) {
 };
 exports.extract = function (fileToRead, newFile) { // params taken as strings
   var text = exports.read(fileToRead);
-  console.log(text);
   text = exports.filter(fileToRead, text);
   exports.write(newFile, text);
 };

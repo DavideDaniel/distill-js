@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DavideDaniel/commentdoc"
+    "url": "https://github.com/DavideDaniel/distill-js"
   },
   "keywords": [
     "comments",
@@ -24,12 +24,12 @@
   "author": "David Daniel <davidedaniel@gmail.com> (http://davidedaniel.github.io), Alvin liang <liangalvin@yahoo.com>",
   "license": [{
     "type": "MIT",
-    "url": "https://github.com/DavideDaniel/commentdoc/blob/master/LICENSE.md"
+    "url": "https://github.com/DavideDaniel/distill-js/blob/master/LICENSE.md"
   }],
   "bugs": {
-    "url": "https://github.com/DavideDaniel/commentdoc/issues"
+    "url": "https://github.com/DavideDaniel/distill-js/issues"
   },
-  "homepage": "https://github.com/DavideDaniel/commentdoc",
+  "homepage": "https://github.com/DavideDaniel/distill-js",
   "dependencies": {
     "chai": "^2.3.0",
     "chai-as-promised": "^5.0.0",
