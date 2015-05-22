@@ -1,10 +1,10 @@
 {
-  "name": "commentdoc",
+  "name": "distill-js",
   "version": "0.1.0",
   "description": "Extracts comments from js files and puts them into md files",
-  "main": "commentdoc.js",
+  "main": "./index",
   "scripts": {
-    "test": "make test"
+    "test": "rm testWrite.md;make test;cat testWrite.md"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,14 @@
     "js",
     "javascript"
   ],
+  "bin": {
+    "distill": "./cli.js"
+  },
   "author": "David Daniel <davidedaniel@gmail.com> (http://davidedaniel.github.io), Alvin liang <liangalvin@yahoo.com>",
-  "license": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/DavideDaniel/commentdoc/blob/master/LICENSE.md"
-    }
-  ],
+  "license": [{
+    "type": "MIT",
+    "url": "https://github.com/DavideDaniel/commentdoc/blob/master/LICENSE.md"
+  }],
   "bugs": {
     "url": "https://github.com/DavideDaniel/commentdoc/issues"
   },

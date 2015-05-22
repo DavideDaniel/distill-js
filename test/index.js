@@ -1,11 +1,11 @@
-var commentDoc = require('../index');
+var distill = require('../index');
 var expect = require('chai').expect;
 var should = require('chai').should();
 var assert = require('assert');
-var read = commentDoc.read;
-var filter = commentDoc.filter;
-var write = commentDoc.write;
-var extract = commentDoc.extract;
+var read = distill.read;
+var filter = distill.filter;
+var write = distill.write;
+var extract = distill.extract;
 
 describe('#read', function () {
 	it('is a function', function () {
@@ -42,7 +42,7 @@ describe('#write', function () {
 		var fileToRead = 'testRead.js';
 		var text = read(fileToRead);
 		var filteredText = filter(fileToRead, text);
-		var newFile = 'testWrite.md';
+		var newFile = fileToRead.replace('.js', '-distilled.md');
 		var expected = 'From testRead.js\n\nLine 0: how now\n';
 
 		write(newFile, filteredText);
