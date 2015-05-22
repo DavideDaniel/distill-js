@@ -1,4 +1,4 @@
-var commentDoc = require('./index');
+var commentDoc = require('./index').extract;
 
 // commentDoc.read
-commentDoc.extract('testRead.js', 'test.md');
+commentDoc('testRead.js', 'test.md');
