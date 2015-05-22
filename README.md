@@ -1,6 +1,6 @@
 # distill-js
 
-Easily separate comments from your javascript code.
+Distill comments from your javascript code.
 
 ### Installation
 
@@ -8,7 +8,7 @@ Easily separate comments from your javascript code.
 
 ### What this does...
 
-distill reads through your code and extracts your comments, then appends them to a given file. Use it to peruse comments or prep documentation. Currently the focus is on javascript.
+distill is a command line node package app that reads through your javascript code, extracts your comments, then appends them to a markdown file. Use it to peruse comments or prep documentation. Currently the focus is on javascript.
 
 ### Usage
 
@@ -20,12 +20,14 @@ distill reads through your code and extracts your comments, then appends them to
 
 Note: testRead-distilled.md should not be present when you run the test
 
+
+
+## TODO
+[ ] additional regex for different ways to comment out js
+
 ### Version
 
 0.1.0
-
-### TODO
-[ ] additional regex for different ways to comment out js
 
 ### License
 [License](<https://github.com/davidedaniel/commentdoc/blob/master/license.md>)
