@@ -4,7 +4,7 @@
   "description": "Extracts comments from js files and puts them into md files",
   "main": "./index",
   "scripts": {
-    "test": "rm testWrite.md;make test;cat testWrite.md"
+    "test": "rm testRead-distilled.md;make test;cat testRead-distilled.md"
   },
   "repository": {
     "type": "git",

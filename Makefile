@@ -6,4 +6,4 @@ test:
 .PHONY: test
 
 clean:
-	@rm ./testWrite.md
+	@rm ./testRead-distilled.md
