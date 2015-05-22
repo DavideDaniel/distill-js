@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/DavideDaniel/distill-js.svg?branch=master)](https://travis-ci.org/DavideDaniel/distill-js)
 # distill-js
 
 Distill comments from your javascript code.
