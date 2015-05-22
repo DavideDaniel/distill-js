@@ -17,7 +17,8 @@ distill reads through your code and extracts your comments, then appends them to
 
 ### Test
 `$ npm test`
-Make sure to remove testWrite.md if you're testing again
+
+Note: testRead-distilled.md should not be present when you run the test
 
 ### Version
 
@@ -25,7 +26,6 @@ Make sure to remove testWrite.md if you're testing again
 
 ### TODO
 [ ] additional regex for different ways to comment out js
-[ ] other languages
 
 ### License
 [License](<https://github.com/davidedaniel/commentdoc/blob/master/license.md>)
